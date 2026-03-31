@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+<header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="home.html">
+                <h1>Home</h1>
+            </a>
+        </div>
+
+</header>
+
+<main>
+
+    <div class="search-container">
+        <input type="search" placeholder="Search for assesment.." id="search">
+    </div>
+
+    <div class="info-container">
+        <h2>Profile</h2>
+    </div>
+
+    <div id="btn-container">
+        <button>Add new</button>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Assessment Name</th>
+                <th>Instructor Name</th>
+                <th>Course Name</th>
+                <th>Submission Date</th>
+                <th>Total Marks</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>234589</td>
+                <td>Midterm Quiz</td>
+                <td>Dr. Sarah Jenkins</td>
+                <td>Introduction to EEE</td>
+                <td>15/10/2025</td>
+                <td>50</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>267879</td>
+                <td>Final Project</td>
+                <td>Prof. Michael Chen</td>
+                <td>Circuit Analysis</td>
+                <td>12/11/2025</td>
+                <td>100</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>345324</td>
+                <td>Lab Report 04</td>
+                <td>Elena Rodriguez</td>
+                <td>Digital Systems</td>
+                <td>05/09/2025</td>
+                <td>25</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>452187</td>
+                <td>Peer Review</td>
+                <td>Dr. James Wilson</td>
+                <td>Technical Writing</td>
+                <td>22/09/2025</td>
+                <td>10</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>589432</td>
+                <td>Ethics Essay</td>
+                <td>Linda Thompson</td>
+                <td>Engineering Ethics</td>
+                <td>30/11/2025</td>
+                <td>40</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</main>
+
+</body>
+</html>

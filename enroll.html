@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+<header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="home.html">
+                <h1>Home</h1>
+            </a>
+        </div>
+
+</header>
+
+<main>
+
+    <div class="search-container">
+        <input type="search" placeholder="Search for profile..." id="search">
+    </div>
+
+    <div class="info-container">
+        <h2>Profile</h2>
+    </div>
+
+    <div id="btn-container">
+        <button>Add new</button>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Course ID</th>
+                <th>Instructor</th>
+                <th>Enrollment Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>234589</td>
+                <td>Sami Islam</td>
+                <td>EEE-101</td>
+                <td>Dr. Ahmed Raza</td>
+                <td>10/01/2026</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>267879</td>
+                <td>Junaid Khan</td>
+                <td>CSE-202</td>
+                <td>Prof. Sarah Hall</td>
+                <td>12/01/2026</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>345324</td>
+                <td>Adilu Hasan</td>
+                <td>BME-305</td>
+                <td>Dr. Victor Fries</td>
+                <td>15/01/2026</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>459012</td>
+                <td>Mehedi Hasan</td>
+                <td>ME-210</td>
+                <td>Engr. Lisa Ray</td>
+                <td>18/01/2026</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>512334</td>
+                <td>Nusrat Jahan</td>
+                <td>CE-401</td>
+                <td>Dr. Alan Grant</td>
+                <td>20/01/2026</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+</body>
+</html>

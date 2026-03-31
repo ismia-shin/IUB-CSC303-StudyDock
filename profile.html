@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+<header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="home.html">
+                <h1>Home</h1>
+            </a>
+        </div>
+
+</header>
+
+<main>
+
+    <div class="search-container">
+        <input type="search" placeholder="Search for Student..." id="search">
+    </div>
+
+    <div class="info-container">
+        <h2>Student Profile</h2>
+    </div>
+
+    <div id="btn-container">
+        <button>Add new</button>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Adress</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>234589</td>
+                <td>Sami</td>
+                <td>Islam</td>
+                <td>19/08/2004</td>
+                <td>Jalalpur</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>267879</td>
+                <td>Sami</td>
+                <td>Islam</td>
+                <td>19/08/2004</td>
+                <td>Jalalpur</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>345324</td>
+                <td>Adilu</td>
+                <td>Hasan</td>
+                <td>12/08/2004</td>
+                <td>Kasimpur</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>345324</td>
+                <td>Adilu</td>
+                <td>Hasan</td>
+                <td>12/08/2004</td>
+                <td>Kasimpur</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>345324</td>
+                <td>Adilu</td>
+                <td>Hasan</td>
+                <td>12/08/2004</td>
+                <td>Kasimpur</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</main>
+
+</body>
+</html>

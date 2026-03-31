@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+<header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="home.html">
+                <h1>Home</h1>
+            </a>
+        </div>
+
+</header>
+
+<main>
+
+    <div class="search-container">
+        <input type="search" placeholder="Search..." id="search">
+    </div>
+
+    <div class="info-container">
+        <h2>Performance and Progress</h2>
+    </div>
+
+    <div id="btn-container">
+        <button>Add new</button>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course ID</th>
+                <th>Instructor</th>
+                <th>Assessment Name</th>
+                <th>Received Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>234589</td>
+                <td>Sami Islam</td>
+                <td>EEE-301</td>
+                <td>Dr. Rahman</td>
+                <td>Final Exam</td>
+                <td>100</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>267879</td>
+                <td>Tanvir Ahmed</td>
+                <td>MAT-205</td>
+                <td>Prof. Smith</td>
+                <td>Midterm 1</td>
+                <td>100</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>345324</td>
+                <td>Adilu Hasan</td>
+                <td>BME-102</td>
+                <td>Dr. Elena</td>
+                <td>Lab Report</td>
+                <td>90</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>412290</td>
+                <td>Farhana Karim</td>
+                <td>CSE-404</td>
+                <td>Engr. Jabbar</td>
+                <td>Project Demo</td>
+                <td>90</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>556712</td>
+                <td>Rafiqul Islam</td>
+                <td>EEE-202</td>
+                <td>Dr. Rahman</td>
+                <td>Quiz 3</td>
+                <td>80</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</main>
+
+</body>
+</html>
