@@ -69,11 +69,22 @@ nav a {
     transition: all 0.3s ease;
 }
 
+nav a.active {
+    background: linear-gradient(135deg, #14abd0, #4e63dd);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+nav a.active:hover {
+    background: linear-gradient(135deg, #14abd0, #4e63dd);
+    color: white;
+}
+
 nav a:hover {
     color: white;
     background: linear-gradient(135deg, #14abd0 0%, #4e63dd 100%);
 }
-
 
 .about-container {
     max-width: 1100px;
