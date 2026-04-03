@@ -40,7 +40,7 @@
     </div>
 
     <div class="info-container">
-        <h2>Profile</h2>
+        <h2>Student Profile</h2>
     </div>
 
     <div id="btn-container">
@@ -49,70 +49,234 @@
     
     <table class="table">
         <thead>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Date of Birth</th>
-            <th>Role</th>
-            <th>Adress</th>
-            <th>Action</th>
+            <tr>
+                <th>UserID</th>
+                <th>Student ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Major</th>
+                <th>Action</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td>234589</td>
+                <td>3001</td>
+                <td>STU101</td>
                 <td>Sami</td>
                 <td>Islam</td>
                 <td>19/08/2004</td>
-                <td>Instructor</td>
-                <td>Jalalpur</td>
+                <td>Computer Science</td>
                 <td>
                     <button onclick="deleteRow(this)">Delete</button>
                     <button onclick="editRow(this)">Edit</button>
                 </td>
             </tr>
             <tr>
-                <td>267879</td>
-                <td>Sami</td>
-                <td>Islam</td>
-                <td>19/08/2004</td>
-                <td>Student</td>
-                <td>Jalalpur</td>
-                <td>
-                    <button onclick="deleteRow(this)">Delete</button>
-                    <button onclick="editRow(this)">Edit</button>
-                </td>
-            </tr>
-            <tr>
-                <td>345324</td>
+                <td>3002</td>
+                <td>STU102</td>
                 <td>Adilu</td>
                 <td>Hasan</td>
                 <td>12/08/2004</td>
+                <td>Electrical Engineering</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3003</td>
+                <td>STU103</td>
+                <td>Rahim</td>
+                <td>Ahmed</td>
+                <td>05/03/2003</td>
+                <td>Mechanical Engineering</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3004</td>
+                <td>STU104</td>
+                <td>Karim</td>
+                <td>Hossain</td>
+                <td>22/11/2002</td>
+                <td>Civil Engineering</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3005</td>
+                <td>STU105</td>
+                <td>Nusrat</td>
+                <td>Jahan</td>
+                <td>14/07/2003</td>
+                <td>Biomedical Engineering</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="info-container">
+        <h2>Instructor Profile</h2>
+    </div>
+
+    <div id="btn-container">
+        <button>Add news</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>UserID</th>
+                <th>Instructor ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Department</th>
+                <th>Education</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2001</td>
+                <td>INS101</td>
+                <td>Sami</td>
+                <td>Islam</td>
+                <td>Computer Science</td>
+                <td>MSc in CSE</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>INS102</td>
+                <td>Adilu</td>
+                <td>Hasan</td>
+                <td>Electrical Engineering</td>
+                <td>BSc in EEE</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>INS103</td>
+                <td>Rahim</td>
+                <td>Ahmed</td>
+                <td>Mechanical Engineering</td>
+                <td>MSc in ME</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2004</td>
+                <td>INS104</td>
+                <td>Karim</td>
+                <td>Hossain</td>
+                <td>Civil Engineering</td>
+                <td>BSc in CE</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>INS105</td>
+                <td>Nusrat</td>
+                <td>Jahan</td>
+                <td>Biomedical Engineering</td>
+                <td>MSc in BME</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="info-container">
+        <h2>Committiee Profile</h2>
+    </div>
+
+    <div id="btn-container">
+        <button>Add news</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>UserID</th>
+                <th>Committee ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Specialization</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>C01</td>
+                <td>Adnan</td>
+                <td>Tasin</td>
+                <td>Instructor</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>C02</td>
+                <td>Sami</td>
+                <td>Islam</td>
+                <td>Student</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>C03</td>
+                <td>Rahim</td>
+                <td>Hasan</td>
                 <td>Committee</td>
-                <td>Kasimpur</td>
                 <td>
                     <button onclick="deleteRow(this)">Delete</button>
                     <button onclick="editRow(this)">Edit</button>
                 </td>
             </tr>
             <tr>
-                <td>345324</td>
-                <td>Adilu</td>
-                <td>Hasan</td>
-                <td>12/08/2004</td>
-                <td>Student</td>
-                <td>Kasimpur</td>
-                <td>
-                    <button onclick="deleteRow(this)">Delete</button>
-                    <button onclick="editRow(this)">Edit</button>
-                </td>
-            </tr>
-            <tr>
-                <td>345324</td>
-                <td>Adilu</td>
-                <td>Hasan</td>
-                <td>12/08/2004</td>
+                <td>1004</td>
+                <td>C04</td>
+                <td>Karim</td>
+                <td>Ahmed</td>
                 <td>Instructor</td>
-                <td>Kasimpur</td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1005</td>
+                <td>C05</td>
+                <td>Nusrat</td>
+                <td>Jahan</td>
+                <td>Student</td>
                 <td>
                     <button onclick="deleteRow(this)">Delete</button>
                     <button onclick="editRow(this)">Edit</button>
