@@ -75,17 +75,3 @@ function updateGradeChart() {
         }
     });
 }
-
-function deleteRow(btn) {
-    if(confirm("Are you sure you want to delete this record?")) {
-        const row = btn.closest('tr');
-        row.remove();
-
-        const ctx = document.getElementById('gradeChart');
-        if (ctx) updateGradeChart();
-    }
-}
-
-function editRow(btn) {
-    alert("Edit functionality would be implemented here.");
-}
