@@ -6,7 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $type = trim($_POST['content_type']);
     $link = trim($_POST['access_link']); 
     $dateNow = date('Y-m-d');
-
+    
+    $courseID = $_POST['course_id']; 
 
     $stmt = $conn->prepare("INSERT INTO content (ContentName, ContentType, DateUploaded, AccessLink, CourseID) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssi", $name, $type, $dateNow, $link, $courseID);
