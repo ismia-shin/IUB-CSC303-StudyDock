@@ -3,6 +3,9 @@ let myChart = null;
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const table = document.querySelector('.table');
+    setupIndependentSearch('searchStudent', 'studentTable');
+    setupIndependentSearch('searchInstructor', 'instructorTable');
+    setupIndependentSearch('searchCommittee', 'committeeTable');
 
     if (searchInput && table) {
         searchInput.addEventListener('keyup', () => {
@@ -73,5 +76,23 @@ function updateGradeChart() {
                 }
             }
         }
+    });
+}
+
+
+function setupIndependentSearch(inputId, tableId) {
+    const input = document.getElementById(inputId);
+    const table = document.getElementById(tableId);
+
+    if (!input || !table) return;
+
+    input.addEventListener('keyup', function () {
+        const filter = input.value.toLowerCase();
+        const rows = table.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(filter) ? '' : 'none';
+        });
     });
 }
