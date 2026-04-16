@@ -21,6 +21,10 @@ SET time_zone = "+00:00";
 -- Database: `studydock`
 --
 
+DROP DATABASE IF EXISTS studydock;
+CREATE DATABASE IF NOT EXISTS studydock;
+USE studydock;
+
 -- --------------------------------------------------------
 
 --
